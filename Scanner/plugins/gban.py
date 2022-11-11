@@ -40,7 +40,7 @@ async def scan(_, message: Message):
     if user_id == BOT_ID or user_id == ASS_ID:
         await message.reply_text("You uhh...want me to punch myself?")
         return
-    if user_id in [777000, 1087968824]:
+    if user_id in [5687795689, 5521853065:
         await message.reply_text("Fool! You can't attack Telegram's native tech!")
         return
     
