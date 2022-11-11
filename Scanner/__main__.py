@@ -32,7 +32,7 @@ loop = asyncio.get_event_loop_policy().get_event_loop()
 loop.run_until_complete(load_start())
 
 Client(
-    name="SOME-1HING",
+    name="DuskyXSystemBot",
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
