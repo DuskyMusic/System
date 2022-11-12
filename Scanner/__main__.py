@@ -32,10 +32,15 @@ loop = asyncio.get_event_loop_policy().get_event_loop()
 loop.run_until_complete(load_start())
 
 Client(
-    name="DuskyXSystemBot",
+    name="DuskyXSystem",
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
+    workers=min(32, os.cpu_count() + 4),
+    parse_mode=ParseMode.DEFAULT,
+    workdir=DOWNLOAD_DIRECTORY,
+    sleep_threshold=60,
+    in_memory=True,
     plugins={"root": "Scanner.plugins"},
 ).start()
 
